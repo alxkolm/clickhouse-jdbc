@@ -462,7 +462,7 @@ public class ClickHousePreparedStatementImpl extends ClickHouseStatementImpl imp
 
     @Override
     public void setTimestamp(int parameterIndex, Timestamp x, Calendar cal) throws SQLException {
-        throw new SQLFeatureNotSupportedException();
+        setTimestamp(parameterIndex, x);
     }
 
     @Override
